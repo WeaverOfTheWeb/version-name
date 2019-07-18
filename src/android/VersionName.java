@@ -3,6 +3,8 @@
 //
 //  Created by Alex Bonine 07/19/2012
 //
+//  Update by Lewis Shaw 18/07/2019 (UK)
+//  - Added ability to look up any installed package's version name.
 
 package com.phonegap.plugins.versionname;
 
@@ -28,7 +30,6 @@ public class VersionName extends CordovaPlugin {
         if(action.equals(ACTION_GET_VERSION_NAME)) {
             try {
                 String packageName = args.getString(0);
-                // PackageInfo packageInfo = packageManager.getPackageInfo(this.cordova.getActivity().getPackageName(), 0);
                 PackageInfo packageInfo = packageManager.getPackageInfo(packageName, 0);
                 result = true;
                 callbackContext.success(packageInfo.versionName);
