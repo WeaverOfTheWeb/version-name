@@ -1,0 +1,35 @@
+{
+  "name": "com.phonegap.plugins.versionname",
+  "version": "2.2.5",
+  "description": "Cordov App Version Name",
+  "cordova": {
+    "id": "com.phonegap.plugins.versionname",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeaverOfTheWeb/version-name.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova",
+    "phonegap"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "WeaverOfTheWeb",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/WeaverOfTheWeb/version-name/issues"
+  },
+  "homepage": "https://github.com/WeaverOfTheWeb/version-name#readme"
+}
