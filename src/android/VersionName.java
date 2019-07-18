@@ -6,7 +6,9 @@
 
 package com.phonegap.plugins.versionname;
 
+import org.json.JSONObject;
 import org.json.JSONArray;
+import org.json.JSONException;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -20,7 +22,7 @@ public class VersionName extends CordovaPlugin {
     public final String ACTION_GET_VERSION_NAME = "getVersionName";
 
     @Override
-    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {
+    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         boolean result = false;
         PackageManager packageManager = this.cordova.getActivity().getPackageManager();
         if(action.equals(ACTION_GET_VERSION_NAME)) {
