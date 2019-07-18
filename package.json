@@ -1,12 +1,11 @@
 {
   "name": "com.phonegap.plugins.versionname",
-  "version": "2.2.5",
+  "version": "1.0.0",
   "description": "Cordov App Version Name",
   "cordova": {
     "id": "com.phonegap.plugins.versionname",
     "platforms": [
-      "android",
-      "ios"
+      "android"
     ]
   },
   "repository": {
@@ -16,7 +15,6 @@
   "keywords": [
     "ecosystem:cordova",
     "cordova-android",
-    "cordova-ios",
     "cordova",
     "phonegap"
   ],
