@@ -1,3 +1,9 @@
+Update
+=====
+
+Can now look up version name of any installed package on Android:
+versionname.getVersionName("com.packageName", successCallback, errorCallback);
+
 Usage
 =====
 
