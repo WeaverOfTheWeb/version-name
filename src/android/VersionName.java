@@ -19,7 +19,7 @@ public class VersionName extends CordovaPlugin {
 
     public final String ACTION_GET_VERSION_NAME = "getVersionName";
 
-    @Override
+    // @Override
     public boolean execute(String action, String packageName, JSONArray args, CallbackContext callbackContext) {
         boolean result = false;
         PackageManager packageManager = this.cordova.getActivity().getPackageManager();
