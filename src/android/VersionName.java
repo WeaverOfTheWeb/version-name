@@ -27,7 +27,7 @@ public class VersionName extends CordovaPlugin {
         PackageManager packageManager = this.cordova.getActivity().getPackageManager();
         if(action.equals(ACTION_GET_VERSION_NAME)) {
             try {
-                packageName = args.getString(0);
+                String packageName = args.getString(0);
                 // PackageInfo packageInfo = packageManager.getPackageInfo(this.cordova.getActivity().getPackageName(), 0);
                 PackageInfo packageInfo = packageManager.getPackageInfo(packageName, 0);
                 result = true;
